@@ -1,0 +1,4 @@
+block_id=lucky_block_monsters
+sword_id=monsters_lucky_sword
+bow_id=monsters_lucky_bow
+potion_id=monsters_lucky_potion
