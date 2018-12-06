@@ -1,5 +1,5 @@
 {
-    "parent": "lucky:block/lucky_block_dme",
+    "parent": "lucky:block/lucky_block_jens",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],
