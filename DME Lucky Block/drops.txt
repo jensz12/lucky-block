@@ -47,22 +47,18 @@ group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you 
 / bouncing castle
 type=structure,ID=bouncing_castle,pos=#pPos,rotation=#pDirect
 
-/ giant lucky blocks
-type=structure,ID=giant_lucky_block_good,rotation=#pDirect@luck=4
-type=structure,ID=giant_lucky_block_bad,rotation=#pDirect@luck=-4
-
 / Colored Sheeps
-type=entity,ID=sheep,NBTTag=(CustomName="$cM$6r. $eR$aa$2i$bn$3b$5o$dw",CustomNameVisible=true,Color=#rand(0,15)),posOffset=#circleOffset(4),amount=10@luck=1
+type=entity,ID=sheep,NBTTag=(CustomName="$cM$6r. $eR$aa$2i$bn$3b$5o$dw",CustomNameVisible=true,Color=#rand(0,15)),posOffset=#circleOffset(4),amount=2@luck=1
 
 / Jeb Sheep
-type=entity,ID=sheep,NBTTag=(CustomName="jeb_",CustomNameVisible=true,Color=#rand(0,0)),posOffset=#circleOffset(4),amount=10@luck=1
+type=entity,ID=sheep,NBTTag=(CustomName="jeb_",CustomNameVisible=true,Color=#rand(0,0)),posOffset=#circleOffset(4),amount=2@luck=2
 
 / Dinnerbone Sheep
-type=entity,ID=sheep,NBTTag=(CustomName="Dinnerbone",CustomNameVisible=true,Color=#rand(0,15)),posOffset=#circleOffset(4),amount=10@luck=1
+type=entity,ID=sheep,NBTTag=(CustomName="Dinnerbone",CustomNameVisible=true,Color=#rand(0,15)),posOffset=#circleOffset(4),amount=2@luck=10
 
 / Toast Rabbit
 type=entity,ID=rabbit,NBTTag=(CustomName="Toast",CustomNameVisible=true),posOffset=#circleOffset(4),amount=5@luck=1
 
 type=block,ID=chest,tileEntity=(Items=#customChestLootTable({"pools":[{"rolls":{"min":6,"max":12},"entries":[{"type":"item","name":"minecraft:iron_ingot","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":8}}]},{"type":"item","name":"minecraft:gold_ingot","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"minecraft:diamond","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"minecraft:emerald","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"minecraft:dye","weight":1,"functions":[{"function":"set_data","data":4},{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"lucky:lucky_block","weight":1,"functions":[{"function":"set_data","data":0},{"function":"set_count","count":{"min":1,"max":2}}]},{"type":"item","name":"minecraft:golden_apple","weight":1,"functions":[{"function":"set_data","data":0},{"function":"set_count","count":{"min":1,"max":2}}]},{"type":"item","name":"minecraft:golden_apple","weight":1,"functions":[{"function":"set_data","data":1},{"function":"set_count","count":{"min":1,"max":2}}]}]}]}))@luck=2
 
-type=entity,ID=rabbit,NBTTag=(RabbitType=99),posOffset=#circleOffset(4),amount=1@luck=-10
+type=entity,ID=rabbit,NBTTag=(RabbitType=99),posOffset=#circleOffset(4),amount=1@luck=-30
