@@ -3,7 +3,15 @@ group(ID=iron_ingot;ID=gold_ingot;ID=diamond_ingot),amount=5
 ID=skull,damage=3,NBTTag=(SkullOwner=sarsum33)
 ID=skull,damage=3,NBTTag=(SkullOwner=DenMandigeElg)
 
-/ Iron, gold, diamond, emerald, lapis with fireworks
+/ Iron, gold, diamond, emerald, lapis med fyrværkeri
 group(ID=iron_ore,amount=#rand(8,16);ID=gold_ore,amount=#rand(4,8);ID=diamond_ore,amount=#rand(4,8);ID=emerald_ore,amount=#rand(4,8);ID=lapis_ore,amount=#rand(4,8);type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag=#randFireworksRocket)),amount=20,posOffset=#circleOffset(0,2))@luck=1
 group(ID=iron_ingot,amount=#rand(8,16);ID=gold_ingot,amount=#rand(8,16);ID=diamond,amount=#rand(8,16);ID=emerald,amount=#rand(8,16);ID=dye,damage=4,amount=#rand(8,16);type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag=#randFireworksRocket)),amount=20,posOffset=#circleOffset(0,2))@luck=2
 group(ID=iron_block,amount=#rand(4,8);ID=gold_block,amount=#rand(4,8);ID=diamond_block,amount=#rand(4,8);ID=emerald_block,amount=#rand(4,8);ID=lapis_block,amount=#rand(4,8);type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag=#randFireworksRocket)),amount=20,posOffset=#circleOffset(0,2))@luck=2
+
+/ Farver
+group(ID=chest;ID=planks,amount=#rand(1,16))@luck=0
+group(ID=sapling;ID=dye,damage=15,amount=#rand(1,16))@luck=0
+group(ID=sapling,damage=1;ID=dye,damage=15,amount=#rand(1,16))@luck=0
+group(ID=sapling,damage=2;ID=dye,damage=15,amount=#rand(1,16))@luck=0
+group(ID=sapling,damage=3;ID=dye,damage=15,amount=#rand(1,16))@luck=0
+group(ID=sapling,damage=4;ID=dye,damage=15,amount=#rand(1,16))@luck=0
