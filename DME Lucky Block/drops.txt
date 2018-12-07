@@ -47,5 +47,26 @@ group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you 
 type=structure,ID=bouncing_castle,pos=#pPos,rotation=#pDirect
 
 / giant lucky blocks
-type=structure,ID=giant_lucky_block_good,rotation=#pDirect@luck=2
-type=structure,ID=giant_lucky_block_bad,rotation=#pDirect@luck=-2
+type=structure,ID=giant_lucky_block_good,rotation=#pDirect@luck=4
+type=structure,ID=giant_lucky_block_bad,rotation=#pDirect@luck=-4
+
+
+/ Colored Sheeps
+type=entity,ID=sheep,NBTTag=(CustomName="$cM$6r. $eR$aa$2i$bn$3b$5o$dw",CustomNameVisible=true,Color=#rand(0,15)),posOffset=#circleOffset(4),amount=16@luck=1
+type=entity,ID=sheep,NBTTag=(CustomName="$cM$6r. $eR$aa$2i$bn$3b$5o$dw",CustomNameVisible=true,Color=#rand(0,15)),posOffset=#circleOffset(4),amount=64@luck=1
+
+/ Jeb Sheep
+type=entity,ID=sheep,NBTTag=(CustomName="jeb_",CustomNameVisible=true,Color=#rand(0,0)),posOffset=#circleOffset(4),amount=16@luck=1
+type=entity,ID=sheep,NBTTag=(CustomName="jeb_",CustomNameVisible=true,Color=#rand(0,0)),posOffset=#circleOffset(4),amount=64@luck=1
+
+/ Dinnerbone Sheep
+type=entity,ID=sheep,NBTTag=(CustomName="Dinnerbone",CustomNameVisible=true,Color=#rand(0,15)),posOffset=#circleOffset(4),amount=16@luck=1
+type=entity,ID=sheep,NBTTag=(CustomName="Dinnerbone",CustomNameVisible=true,Color=#rand(0,15)),posOffset=#circleOffset(4),amount=64@luck=1
+
+/ Grumm Sheep
+type=entity,ID=sheep,NBTTag=(CustomName="Grumm",CustomNameVisible=true,Color=#rand(0,15)),posOffset=#circleOffset(4),amount=16@luck=1
+type=entity,ID=sheep,NBTTag=(CustomName="Grumm",CustomNameVisible=true,Color=#rand(0,15)),posOffset=#circleOffset(4),amount=64@luck=1
+
+/ Toast Rabbit
+type=entity,ID=rabbit,NBTTag=(CustomName="Toast",CustomNameVisible=true),posOffset=#circleOffset(4),amount=16@luck=1
+type=entity,ID=rabbit,NBTTag=(CustomName="Toast",CustomNameVisible=true),posOffset=#circleOffset(4),amount=64@luck=1
