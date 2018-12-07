@@ -1,5 +1,5 @@
 / Groups
 
 type=item,ID=minecraft:command_block,amount=1,NBTTag=(display=(Name="$4$lJens' Magiske Command Block"))
-/ To do. Find ud af hvordan det her virker: type=item,ID=minecraft:leather_helmet,amount=1@luck=0,NBTTag=(id=leather_chestplate,tag=(display=(color=8339378)))
 group(ID=iron_ingot;ID=gold_ingot;ID=diamond_ingot),amount=5
+ID=skull,damage=3,NBTTag=(SkullOwner=sarsum33)
