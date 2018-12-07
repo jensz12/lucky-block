@@ -16,9 +16,6 @@ group(ID=sapling,damage=2;ID=dye,damage=15,amount=#rand(1,16))@luck=0
 group(ID=sapling,damage=3;ID=dye,damage=15,amount=#rand(1,16))@luck=0
 group(ID=sapling,damage=4;ID=dye,damage=15,amount=#rand(1,16))@luck=0
 
-
-/ ========== STRUCTURES ==========
-
 / traps
 type=structure,ID=anvil_trap,pos=#pPos,rotation=#pDirect@luck=-2
 type=structure,ID=lava_trap,pos=#pPos,rotation=#pDirect@luck=-2
@@ -70,3 +67,5 @@ type=entity,ID=sheep,NBTTag=(CustomName="Grumm",CustomNameVisible=true,Color=#ra
 / Toast Rabbit
 type=entity,ID=rabbit,NBTTag=(CustomName="Toast",CustomNameVisible=true),posOffset=#circleOffset(4),amount=16@luck=1
 type=entity,ID=rabbit,NBTTag=(CustomName="Toast",CustomNameVisible=true),posOffset=#circleOffset(4),amount=64@luck=1
+
+type=block,ID=chest,tileEntity=(Items=#customChestLootTable({"pools":[{"rolls":{"min":6,"max":12},"entries":[{"type":"item","name":"minecraft:iron_ingot","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":8}}]},{"type":"item","name":"minecraft:gold_ingot","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"minecraft:diamond","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"minecraft:emerald","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"minecraft:dye","weight":1,"functions":[{"function":"set_data","data":4},{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"lucky:lucky_block","weight":1,"functions":[{"function":"set_data","data":0},{"function":"set_count","count":{"min":1,"max":2}}]},{"type":"item","name":"minecraft:golden_apple","weight":1,"functions":[{"function":"set_data","data":0},{"function":"set_count","count":{"min":1,"max":2}}]},{"type":"item","name":"minecraft:golden_apple","weight":1,"functions":[{"function":"set_data","data":1},{"function":"set_count","count":{"min":1,"max":2}}]}]}]}))@luck=2
