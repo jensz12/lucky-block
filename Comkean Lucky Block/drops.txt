@@ -2,7 +2,7 @@ type=item,ID=minecraft:command_block,amount=1,NBTTag=(display=(Name="$4$lJens' M
 group(ID=iron_ingot;ID=gold_ingot;ID=diamond_ingot),amount=5@luck=3
 ID=skull,damage=3,NBTTag=(SkullOwner=sarsum33)@luck=2
 ID=skull,damage=3,NBTTag=(SkullOwner=DenMandigeElg)@luck=2
-type=item,ID=harvestcraft:pizzaitem,amount=1,NBTTag=(display=(Name="$4$lPizza med ananas"))@luck=1
+group(ID=harvestcraft:pizzaitem,amount=1,NBTTag=(display=(Name="$e$lPizza med ananas"));ID=harvestcraft=pineappleitem)@luck=1
 
 / Iron, gold, diamond, emerald, lapis med fyrværkeri
 group(ID=iron_ore,amount=#rand(8,16);ID=gold_ore,amount=#rand(4,8);ID=diamond_ore,amount=#rand(4,8);ID=emerald_ore,amount=#rand(4,8);ID=lapis_ore,amount=#rand(4,8);type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,tag=#randFireworksRocket)),amount=20,posOffset=#circleOffset(0,2))@luck=1
