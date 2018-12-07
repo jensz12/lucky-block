@@ -1,1 +1,2 @@
-group(ID=harvestcraft:pizzaitem,amount=1,NBTTag=(display=(Name="$e$lPizza med ananas"));ID=harvestcraft=pineappleitem)@luck=1
+ID=harvestcraft:pizzaitem,amount=1,NBTTag=(display=(Name="$e$lPizza med ananas"));
+ID=harvestcraft=pineappleitem,amount=10@luck=1
