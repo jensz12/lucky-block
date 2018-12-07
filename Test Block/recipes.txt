@@ -1,0 +1,2 @@
+ono,nln,ono,o,rotten_flesh,n,bone,l,lucky:lucky_block
+ono,nln,ono,o,rotten_flesh,n,bone,l,gunpowder
