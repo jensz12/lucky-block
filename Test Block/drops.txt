@@ -1,7 +1,7 @@
 / Bow and Arrows
-group(ID=bow;ID=arrow,amount=#rand(16,32))@luck=1
-group(ID=spectral_arrow=#rand(8,16);ID=arrow,amount=#rand(16,32))@luck=1
-group(ID=bow;ID=spectral_arrow,amount=#rand(16,32))@luck=2
+group(ID=bow;ID=arrow,amount=16)@luck=1
+group(ID=spectral_arrow=8;ID=arrow,amount=16)@luck=1
+group(ID=bow;ID=spectral_arrow,amount=16)@luck=2
 
 / 1-2 diamond tools
 group:#rand(1,2):(ID=diamond_sword;ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_hoe)@luck=2
