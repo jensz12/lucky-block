@@ -60,3 +60,11 @@ type=entity,ID=rabbit,NBTTag=(CustomName="Toast",CustomNameVisible=true),posOffs
 type=block,ID=chest,tileEntity=(Items=#customChestLootTable({"pools":[{"rolls":{"min":6,"max":12},"entries":[{"type":"item","name":"minecraft:iron_ingot","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":8}}]},{"type":"item","name":"minecraft:gold_ingot","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"minecraft:diamond","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"minecraft:emerald","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"minecraft:dye","weight":1,"functions":[{"function":"set_data","data":4},{"function":"set_count","count":{"min":1,"max":4}}]},{"type":"item","name":"lucky:lucky_block","weight":1,"functions":[{"function":"set_data","data":0},{"function":"set_count","count":{"min":1,"max":2}}]},{"type":"item","name":"minecraft:golden_apple","weight":1,"functions":[{"function":"set_data","data":0},{"function":"set_count","count":{"min":1,"max":2}}]},{"type":"item","name":"minecraft:golden_apple","weight":1,"functions":[{"function":"set_data","data":1},{"function":"set_count","count":{"min":1,"max":2}}]}]}]}))@luck=2
 
 type=entity,ID=rabbit,NBTTag=(RabbitType=99),posOffset=#circleOffset(4),amount=1@luck=-30
+
+/ Bow and Arrows
+group(ID=bow;ID=arrow,amount=16)@luck=1
+group(ID=spectral_arrow=8;ID=arrow,amount=16)@luck=1
+group(ID=bow;ID=spectral_arrow,amount=16)@luck=2
+
+/ 1-2 diamond tools
+group:#rand(1,2):(ID=diamond_sword;ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_hoe)@luck=2
