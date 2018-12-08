@@ -1,0 +1,2 @@
+/ baby player
+type=entity,ID=armor_stand,NBTTag=(Small=true,NoBasePlate=true,ShowArms=true,HandItems=[(id=stone_pickaxe,Count=1)],ArmorItems=[(id=leather_boots,Count=1,tag=(display=(color=#rand(0,16777215)))),(id=leather_leggings,Count=1,tag=(display=(color=#rand(0,16777215)))),(id=leather_chestplate,Count=1,tag=(display=(color=#rand(0,16777215)))),(id=skull,Damage=3,Count=1,tag=(SkullOwner=#pName))],Rotation=[#pYaw+180f,0f],CustomName="Baby #pName",CustomNameVisible=true)@luck=0
