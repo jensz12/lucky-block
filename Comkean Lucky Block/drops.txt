@@ -18,12 +18,6 @@ group(ID=sapling,damage=2;ID=dye,damage=15,amount=#rand(1,16))@luck=0
 group(ID=sapling,damage=3;ID=dye,damage=15,amount=#rand(1,16))@luck=0
 group(ID=sapling,damage=4;ID=dye,damage=15,amount=#rand(1,16))@luck=0
 
-/ traps
-type=structure,ID=anvil_trap,pos=#pPos,rotation=#pDirect@luck=-2
-type=structure,ID=lava_trap,pos=#pPos,rotation=#pDirect@luck=-2
-type=structure,ID=water_trap,pos=#pPos@luck=-2  
-type=structure,ID=pit_trap,pos=#pPos@luck=-2
-
 / lucky fort and temple
 type=structure,ID=lucky_fort,pos=#pPos@luck=2
 type=structure,ID=lucky_temple,pos=#pPos@chance=0.4@luck=2
@@ -31,8 +25,6 @@ type=structure,ID=lucky_temple,pos=#pPos@chance=0.4@luck=2
 / bedrock problem
 type=structure,ID=bedrock_problem,rotation=#pDirect@luck=-1
 
-/ explosion
-group(type=difficulty,ID=hard;type=explosion,radius=6)@luck=-2
 
 / choice of 2 lucky blocks
 group:1:(type=structure,ID=lucky_choice_left,rotation=#pDirect;type=structure,ID=lucky_choice_right,rotation=#pDirect)@luck=0
@@ -67,4 +59,10 @@ group(ID=spectral_arrow=8;ID=arrow,amount=16)@luck=1
 group(ID=bow;ID=spectral_arrow,amount=16)@luck=2
 
 / 1-2 diamond tools
-group:#rand(1,2):(ID=diamond_sword;ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_hoe)@luck=2
+group:#rand(1,2):(ID=diamond_sword;ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_hoe)@luck=90
+
+
+/ baby player
+type=entity,ID=armor_stand,NBTTag=(Small=true,NoBasePlate=true,ShowArms=true,HandItems=[(id=stone_pickaxe,Count=1)],ArmorItems=[(id=leather_boots,Count=1,tag=(display=(color=#rand(0,16777215)))),(id=leather_leggings,Count=1,tag=(display=(color=#rand(0,16777215)))),(id=leather_chestplate,Count=1,tag=(display=(color=#rand(0,16777215)))),(id=skull,Damage=3,Count=1,tag=(SkullOwner=#pName))],Rotation=[#pYaw+180f,0f],CustomName="Baby #pName",CustomNameVisible=true)@luck=0
+
+ID=lucky:lucky_block_cat,ammount=1@luck=90

@@ -1,2 +1,13 @@
-/ baby player
-type=entity,ID=armor_stand,NBTTag=(Small=true,NoBasePlate=true,ShowArms=true,HandItems=[(id=stone_pickaxe,Count=1)],ArmorItems=[(id=leather_boots,Count=1,tag=(display=(color=#rand(0,16777215)))),(id=leather_leggings,Count=1,tag=(display=(color=#rand(0,16777215)))),(id=leather_chestplate,Count=1,tag=(display=(color=#rand(0,16777215)))),(id=skull,Damage=3,Count=1,tag=(SkullOwner=#pName))],Rotation=[#pYaw+180f,0f],CustomName="Baby #pName",CustomNameVisible=true)@luck=0
+/ 1-2 tools & armor
+group:#rand(1,2):(ID=diamond_sword;ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_hoe)@luck=90
+group:#rand(1,2):(ID=diamond_helmet;ID=diamond_chestplate;ID=diamond_leggins;ID=diamond_boots)@luck=90
+group:#rand(1,2):(ID=leather_helmet;ID=leather_chestplate;ID=leather_leggins;ID=leather_boots)@luck=10
+group:#rand(1,2):(ID=iron_helmet;ID=iron_chestplate;ID=iron_leggins;ID=iron_boots)@luck=10
+group:#rand(1,2):(ID=gold_helmet;ID=gold_chestplate;ID=gold_leggins;ID=gold_boots)@luck=10
+ID=harvestcraft:chocolatesprinklecakeitem@luck=5
+
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 1 0 {display:{Name:\"$6CCoin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came true! (If you like pineapples)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=harvestcraft:pineappleitem,amount=128,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=harvestcraft:pineappleitem,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=harvestcraft:pineappleitem,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=1
+
+ID=lucky:lucky_sword
+
+type=entity,ID=ocelot,NBTTag=(Owner=Comkean,CatType=4,CustomName="Simba",CustomNameVisible=true),posOffset=#circleOffset(4),amount=1@luck=1
