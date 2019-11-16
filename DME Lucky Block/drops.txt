@@ -1,7 +1,7 @@
 type=item,ID=minecraft:command_block,amount=1,NBTTag=(display=(Name="$4$lJens' Magiske Command Block"))@luck=30
 group(ID=iron_ingot;ID=gold_ingot;ID=diamond_ingot),amount=5@luck=3
 ID=skull,damage=3,NBTTag=(SkullOwner=sarsum33)@luck=30
-ID=skull,damage=3,NBTTag=(SkullOwner=CatrineSejr)@luck=50
+ID=skull,damage=3,NBTTag=(SkullOwner=Dumfroe)@luck=50
 ID=skull,damage=3,NBTTag=(SkullOwner=Comkean)@luck=2
 
 
